@@ -2,42 +2,48 @@
 
 1. IDEAL
 
-Create a model that identifies technical indicators and then predicts the subsequent price movement in the market. This will initially focus on Marubuzo.
+Create a model that identifies two technical indicators and then predicts the subsequent price movement in the market. This will enable traders to have extra information to help inform their trading decisions or potentially automate parts of it. I will also be able to contrast the two candlestick patterns and determine if there is a better strategy to use.
 
 
 2. REALITY
 
 The FOREX market and all stock market prices are very hard to predict. The price movements are often described as completely random. The time series is effected by a lot of external factors other than date. Therefore the probability of getting a good prediction is low. 
 
+Using the candlestick patterns 
+
 So I will look at adding key exogenous or external features to help with the prediction.
 
 I will look to include:
-   + Inflation rates
-   + Interest rates
+   + Gold prices
    + Volatility
-   + Moving Averages on 3 time lags
+   + Moving Averages
    
-
-Technical traders believe that these factors are already accounted for in the prices or rates. Therefore the chart patterns can be all you need to look at. It will be interesting to see if they do have an impact on price prediction.
+Technical traders believe that these factors are already accounted for in the price or rate. Therefore the chart patterns can be all you need to look at.
 
 
 3. CONSEQUENCES
 
-Currently traders have trouble predicting their entry and exit points. They are often right but either miss a trade, get stopped out too soon or in trying to find maximum profit miss time their exit. Without this model to give them guidelines to work with
+If the models are unable to predict the price movement and prove the candlestick patterns offer strong signals of market direction then this will mean traders are unable.
 
 4. PROPOSAL
 
-After comparing 3 algorithms ARIMAX, SARIMAX and Prophet I will create a final model to predict the highest stock price in the next 3 time frames. 
 
-I will use RMSE as my accuracy score. My benchmark will be predicting the current price. I choose this due to high correlation in the prior prices. Given the nature of the randomness of the stock market this might be harder to beat than it sounds.
+I will compare 3 algorithms ARIMAX, SARIMAX and PROPHET to see which one is best at predicting the price movement. The prediction will be based on the following 5 time frames.
+
+A threshold will be set which is the height of the final candle and at least +/- 0.005 compared to the close price. If the algorithm predicts a price higher or lower than the threshold and the actual price goes beyond this it will be judged a success.
+
+Therefore I will use a confusion matrix to analyse the results and will look at precision, accuracy and recall to determine the performance of the stratey and the models.
+
+The best model w
+
+I will then use MLR exploring penalty features such as Lasso, Ridge and Elastic Net to help create predictions
+
 
 
 A key area would be to infer what the strategy implications are and explain the key factors to success or failure of the model.
 
 
-Bonus:
-+ Learn how to implemnet a bot on a trading account
-+ Create a python based web app to track results
+
 
 ## Executive Summary
 
