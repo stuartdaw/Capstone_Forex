@@ -75,17 +75,12 @@ The files in this repo are organised as follows:
 + 7.0 Modelling-Multiple linear Regression
 + 8.0 Conclusions and Recommendations
 
-It should start with a summary of what the repo contains and provide links to important files.
-Think of it as a table of contents for your repo.
-You should list the external libraries/packages that you use, especially if they are not standard (i.e., not part of the base Anaconda distribution.)
 
+### Exernal Libraries
 
-Where did you get your data?
-What are your metrics?
-What were your findings?
-What risks/limitations/assumptions affect these findings?
-
-
++ [Prophet Facebook](https://facebook.github.io/prophet/) - for times series forecasting
++ [Plotly](https://plotly.com/python/) - to produce candlestick graphs
++ [pmdarima](https://pypi.org/project/pmdarima/) - help with arimax hyperparameters and acf/pacf plots
 
 
 
@@ -94,6 +89,10 @@ What risks/limitations/assumptions affect these findings?
 
 
 ## Recommendations
+
+
+What were your findings?
+What risks/limitations/assumptions affect these findings?
 
 #### rec 1
 
