@@ -37,7 +37,7 @@ If the models are unable to predict the price movement and prove the candlestick
 4. PROPOSAL
 
 
-I will compare three time series algorithms ARIMAX, SARIMAX and PROPHET to see which one is best at predicting the price movement. The prediction will be based on the following 5 time frames.
+I will compare three time series algorithms ARIMAX, SARIMAX and PROPHET to see which one is best at predicting the price movement. The prediction will be based on the next 5 time frames.
 
 A threshold will be set which is the height of the final candle and at least +/- 0.005 compared to the close price. If the algorithm predicts a price higher or lower than the threshold and the actual price goes beyond this it will be judged a success.
 
@@ -50,6 +50,11 @@ This will hopefully yield a successful model or give insight into how it could b
 
 
 ## Executive Summary
+
+
+Using candlestick patterns, time series modelling and multiple linear regression (MLR) together has proven to be succesful. This combination predicts whether the market will move over a set threshold. The precision that this combination has produced is 84% and the accuracy is 72%. This would be a useful tool for traders to use to help enhance their trading strategies. It means that when the model predicts a move up or down as appropriate then the market has a 84% chance of at least breaking this threshold price.
+
+The best combination was using fractals, Arimax and MLR using Elastic net regularisation. The ARIMAX prediction that fed into the MLR was high up the coeffient ranks and only behind the prior days price.
 
 
 ## Key Project information
@@ -122,6 +127,5 @@ However this can be tempered by:
 
 ## References
 [Online web property search](https://www.realtor.com/realestateandhomes-search/Ames_IA)
-
 [FOREX data](https://www.histdata.com/)
 [Technical Indicators](https://www.histdata.com/)
