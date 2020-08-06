@@ -88,22 +88,36 @@ The files in this repo are organised as follows:
 
 ![fractal](/images/Fractal.png)
 
-A fractal is a pattern where the middel candles high is higher than the highs on the left and right. Then the outer candles a lower again
+A fractal is a pattern where the middle candles high, is higher than the highs on the left and right. Then the outer candles are lower again.
 
 ![Marubozu](/images/Marubozu.png)
 
-The Marubozu pattern i am looking at is when the candle next to it is the same height but in the opposite direction.
+The Marubozu pattern I am looking at is when the candle next to it is the same height but in the opposite direction.
 
 
 ## Recommendations
 
 
-What were your findings?
-What risks/limitations/assumptions affect these findings?
+Overall there have been some good success:
 
-#### rec 1
++ Using ARIMAX, MLR and the fractal pattern has shown some good results.
++ It shows that Machine Learning can be used to optimise parts of the candlestick pattern trading
 
-#### rec 2
+However this can be tempered by:
+
++ Getting the market decision correct may not lead to profit. The model assumes that there are no stop losses. Therefore it doesnt factor in that a correct decision over 5 time frames may move initially in the wrong drectino before recovering at which point the trade has already been closed at a loss.
+
++ It also doesnt factor in the cost of entry and exit from positions. The spread may lead to a significant reduction in profit. Although 50pips would be a worthwhile trade for a spread bet it still may not be enough if it doesnt satify risk reward levels.
+
+## Further study
+
++ More strategies: The OOD design means I would just have to code the subclass and then it would be ready to go.
++ More markets: Feeding new currency pairs into the superclass means that it will be quick to try other markets.
++ Other Models: I would like to try RNN and XG Boost to see if the results improve further.
++ Increase the parameters: If I spent more time tuning the model with more features then maybe Increasing the threshold might lead to a more tradable strategy.
++ Risk Management: Use the model to predict the opposite low/high point and then determine where an appropriate stop loss can be placed.
++ Create a strategy: Usee this to create a strategy and backtest it to see how it performs.
+
 
 
 ## References
