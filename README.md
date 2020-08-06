@@ -86,11 +86,11 @@ The files in this repo are organised as follows:
 
 ## Pattern Descriptions
 
-![fractal](images/fractal.png)
+![fractal](/images/Fractal.png)
 
 A fractal is a pattern where the middel candles high is higher than the highs on the left and right. Then the outer candles a lower again
 
-![Marubozu](images/marubozu.png)
+![Marubozu](/images/Marubozu.png)
 
 The Marubozu pattern i am looking at is when the candle next to it is the same height but in the opposite direction.
 
