@@ -129,5 +129,3 @@ However this can be tempered by:
 [Online web property search](https://www.realtor.com/realestateandhomes-search/Ames_IA)
 [FOREX data](https://www.histdata.com/)
 [Technical Indicators](https://www.histdata.com/)
-
-End
